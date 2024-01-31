@@ -6,5 +6,9 @@ jobs:
   test-job-1:
     runs-on: ubuntu-latest
     steps:
-    - name: Echo system release
-      run: cat /etc/os-release
+    - name: Show memory
+      run: free -h
+    - name: List disk
+      run: lsblk
+    - name: Show cpus
+      run: lscpu
